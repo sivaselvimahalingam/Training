@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".btn").click(function(){
+                $("#select").hide();
+            });
+
+            $(".btn_1").click(function(){
+                $("#select_1").hide();
+            });
+
+            $(".btn_2").click(function(){
+                $("*").hide();
+            });
+
+            $(".btn_3").click(function(){
+                $(this).hide();
+            });
+
+            $(".btn_4").click(function(){
+                $("p.select_4").hide();
+            });
+
+            $(".btn_5").click(function(){
+                $("#select_5:first").hide();
+            });
+
+            $(".btn_6").click(function(){
+                $(".list_1 li:first").hide();
+            });
+
+            $(".btn_7").click(function(){
+                $(".list_2 li:first-child").hide();
+            });
+
+            $(".btn_8").click(function(){
+                $(" [href]").hide();
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <h2> SELECTORS</h2>
+
+    <p id="select">Exercise practice on element selector</p>
+    <button class="btn">Click</button>
+
+    <p id="select_1">Exercise practice on #id and class selector</p>
+    <button class="btn_1">Click</button>
+
+    <p id="select_2">Exercise practice on * selector</p>
+    <button class="btn_2">Click</button>
+
+    <p id="select_3">Exercise practice on this selector</p>
+    <button class="btn_3">Click</button>
+
+    <p class="select_4">Exercise practice on p.intro selector</p>
+    <p class="select_4">This hide the intro </p>
+    <p >This hide the intro </p>
+    <button class="btn_4">Click</button>
+
+    <p id="select_5">Exercise practice on p:first selector</p>
+    <p id="select_5">This hide the intro </p>
+    <p id="select_5">This hide the intro </p>
+    <button class="btn_5">Click</button>
+
+    <h2 class="list">List Element Selector</h2>
+    <ul class="list_1">
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>JAVA SCRIPT</li>
+        <li>JQUERY</li>
+    </ul>
+    <button class="btn_6">Click</button>
+
+    <h3 class="list">List Element Selector</h3>
+    <ul  class="list_2">
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>JAVA SCRIPT</li>
+        <li>JQUERY</li>
+    </ul>
+
+    <ul class="list_2">
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>JAVA SCRIPT</li>
+        <li>JQUERY</li>
+    </ul>
+    <button class="btn_7">Click</button>
+
+    <h1 >Exercise practice on herf selector </h1>
+    <p id="select_6">This is a href selector</p>
+    <p id="select_6"><a
+         href="https://www.w3schools.com/jquery/jquery_selectors.asp">JQuery</a></p>
+    <button class="btn_8">Click</button>
+
+   </body>
+</html>

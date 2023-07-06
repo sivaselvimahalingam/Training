@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".click").click(function(){
+                $(this).hide();
+            });
+
+            $("#click").dblclick(function(){
+                $(this).hide();
+            });
+
+            $("#click_1").mouseenter(function(){
+               alert("not allowed to click");
+            });
+
+            $("#click_2").mouseleave(function(){
+               alert("Be Positive!!");
+            });
+
+            $("#click_3").mousedown(function(){
+               alert("Have a nice day!!");
+            });
+
+            $("#click_4").mouseup(function(){
+               alert("move up!!");
+            });
+        })
+    </script>
+</head>
+<body>
+    <h1 class="click">Click me and see what happen!!</h1>
+
+    <p id="click">Click and see!!</p>
+
+    <p id="click_1">Dont click me!</p>
+
+    <p id="click_2">mouseleave</p>
+
+    <p id="click_3">mousedown</p>
+
+    <p id="click_4">mouseup</p>
+
+
+
+</body>
+</html>
